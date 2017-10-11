@@ -3,8 +3,7 @@
 *.ear
 target/
 *.iml
-.idea/
-.project
 .classpath
 .settings/
 .gradle/
+/bin/

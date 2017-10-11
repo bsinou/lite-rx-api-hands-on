@@ -1,5 +1,12 @@
 # Lite Rx API Hands-on
 
+## Personal notes
+
+- A good starting point is the [Reactor reference documentation](https://projectreactor.io/docs/core/release/reference/) 
+
+
+## Author's comments
+
 This Hands-on is designed to help you to learn easily the lite Rx API provided by [Reactor Core 3.x](https://github.com/reactor/reactor-core/).
 
 You will mostly need these 3 classes Javadoc:
@@ -22,3 +29,4 @@ The solution is available in the `complete` branch to compare, when you have fin
 A Kotlin version that takes advantage of [reactor-kotlin-extensions](https://github.com/reactor/reactor-kotlin-extensions) is available [here](https://github.com/eddumelendez/reactor-kotlin-workshop).
  
 More information available on [Reactor website](http://projectreactor.io).
+
