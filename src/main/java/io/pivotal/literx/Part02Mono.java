@@ -6,36 +6,29 @@ import reactor.core.publisher.Mono;
  * Learn how to create Mono instances.
  *
  * @author Sebastien Deleuze
- * @see <a href="http://projectreactor.io/docs/core/release/api/reactor/core/publisher/Mono.html">Mono Javadoc</a>
+ * @see <a href=
+ *      "http://projectreactor.io/docs/core/release/api/reactor/core/publisher/Mono.html">Mono
+ *      Javadoc</a>
  */
 public class Part02Mono {
 
-//========================================================================================
-
-	// TODO Return an empty Mono
+	/** Returns an empty Mono */
 	Mono<String> emptyMono() {
-		return null;
+		return Mono.<String>empty();
 	}
 
-//========================================================================================
-
-	// TODO Return a Mono that never emits any signal
+	/** Returns a Mono that never emits any signal */
 	Mono<String> monoWithNoSignal() {
-		return null;
+		return Mono.<String>never();
 	}
 
-//========================================================================================
-
-	// TODO Return a Mono that contains a "foo" value
+	/** Returns a Mono that contains a "foo" value */
 	Mono<String> fooMono() {
-		return null;
+		return Mono.just("foo");
 	}
 
-//========================================================================================
-
-	// TODO Create a Mono that emits an IllegalStateException
+	/** Creates a Mono that emits an IllegalStateException */
 	Mono<String> errorMono() {
-		return null;
+		return Mono.<String>error(new IllegalStateException());
 	}
-
 }

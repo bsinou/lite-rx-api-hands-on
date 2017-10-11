@@ -56,9 +56,14 @@ public class Part03StepVerifierTest {
 
 //========================================================================================
 
+	// Rather use a supplier to enable virtual time
+//	@Test
+//	public void count() {
+//		workshop.expect10Elements(Flux.interval(Duration.ofSeconds(1)).take(10));
+//	}
 	@Test
 	public void count() {
-		workshop.expect10Elements(Flux.interval(Duration.ofSeconds(1)).take(10));
+		workshop.expect10Elements(() ->Flux.interval(Duration.ofSeconds(1)).take(10));
 	}
 
 //========================================================================================
